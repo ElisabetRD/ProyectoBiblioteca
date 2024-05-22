@@ -30,9 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CRUD));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Autor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Clasificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Folio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Carrera = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre_alumno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Numero_control = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
@@ -56,16 +66,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Autor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Clasificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Folio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Carrera = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre_alumno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Numero_control = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel3.SuspendLayout();
@@ -74,6 +76,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -82,18 +85,31 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Biblioteca.Properties.Resources.angulo_izquierdo;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(57, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 61;
+            this.pictureBox1.TabStop = false;
+            // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(247, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(194, 5);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(249, 60);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Ingreso Registro";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Size = new System.Drawing.Size(398, 54);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Ingreso registro";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -121,11 +137,19 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(1, 60);
+            this.panel2.Location = new System.Drawing.Point(12, 86);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(809, 795);
+            this.panel2.Size = new System.Drawing.Size(779, 757);
             this.panel2.TabIndex = 1;
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Location = new System.Drawing.Point(151, 26);
+            this.dtpFecha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(295, 26);
+            this.dtpFecha.TabIndex = 60;
             // 
             // dataGridView2
             // 
@@ -146,6 +170,62 @@
             this.dataGridView2.Size = new System.Drawing.Size(604, 372);
             this.dataGridView2.TabIndex = 59;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            // 
+            // Fecha
+            // 
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.MinimumWidth = 8;
+            this.Fecha.Name = "Fecha";
+            this.Fecha.Width = 150;
+            // 
+            // Titulo
+            // 
+            this.Titulo.HeaderText = "Titulo del Libro";
+            this.Titulo.MinimumWidth = 8;
+            this.Titulo.Name = "Titulo";
+            this.Titulo.Width = 150;
+            // 
+            // Autor
+            // 
+            this.Autor.HeaderText = "Autor";
+            this.Autor.MinimumWidth = 8;
+            this.Autor.Name = "Autor";
+            this.Autor.Width = 150;
+            // 
+            // Clasificacion
+            // 
+            this.Clasificacion.HeaderText = "Clasificacion";
+            this.Clasificacion.MinimumWidth = 8;
+            this.Clasificacion.Name = "Clasificacion";
+            this.Clasificacion.Width = 150;
+            // 
+            // Folio
+            // 
+            this.Folio.HeaderText = "Folio";
+            this.Folio.MinimumWidth = 8;
+            this.Folio.Name = "Folio";
+            this.Folio.Width = 150;
+            // 
+            // Carrera
+            // 
+            this.Carrera.HeaderText = "Carrrera";
+            this.Carrera.MinimumWidth = 8;
+            this.Carrera.Name = "Carrera";
+            this.Carrera.Width = 150;
+            // 
+            // Nombre_alumno
+            // 
+            this.Nombre_alumno.HeaderText = "Nombre Alumno";
+            this.Nombre_alumno.MinimumWidth = 8;
+            this.Nombre_alumno.Name = "Nombre_alumno";
+            this.Nombre_alumno.Width = 150;
+            // 
+            // Numero_control
+            // 
+            this.Numero_control.HeaderText = "Numero de Control";
+            this.Numero_control.MinimumWidth = 8;
+            this.Numero_control.Name = "Numero_control";
+            this.Numero_control.Width = 150;
             // 
             // btnLimpiar
             // 
@@ -401,70 +481,6 @@
             this.label1.TabIndex = 23;
             this.label1.Text = "Fecha:";
             // 
-            // dtpFecha
-            // 
-            this.dtpFecha.Location = new System.Drawing.Point(151, 26);
-            this.dtpFecha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(295, 26);
-            this.dtpFecha.TabIndex = 60;
-            // 
-            // Fecha
-            // 
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.MinimumWidth = 8;
-            this.Fecha.Name = "Fecha";
-            this.Fecha.Width = 150;
-            // 
-            // Titulo
-            // 
-            this.Titulo.HeaderText = "Titulo del Libro";
-            this.Titulo.MinimumWidth = 8;
-            this.Titulo.Name = "Titulo";
-            this.Titulo.Width = 150;
-            // 
-            // Autor
-            // 
-            this.Autor.HeaderText = "Autor";
-            this.Autor.MinimumWidth = 8;
-            this.Autor.Name = "Autor";
-            this.Autor.Width = 150;
-            // 
-            // Clasificacion
-            // 
-            this.Clasificacion.HeaderText = "Clasificacion";
-            this.Clasificacion.MinimumWidth = 8;
-            this.Clasificacion.Name = "Clasificacion";
-            this.Clasificacion.Width = 150;
-            // 
-            // Folio
-            // 
-            this.Folio.HeaderText = "Folio";
-            this.Folio.MinimumWidth = 8;
-            this.Folio.Name = "Folio";
-            this.Folio.Width = 150;
-            // 
-            // Carrera
-            // 
-            this.Carrera.HeaderText = "Carrrera";
-            this.Carrera.MinimumWidth = 8;
-            this.Carrera.Name = "Carrera";
-            this.Carrera.Width = 150;
-            // 
-            // Nombre_alumno
-            // 
-            this.Nombre_alumno.HeaderText = "Nombre Alumno";
-            this.Nombre_alumno.MinimumWidth = 8;
-            this.Nombre_alumno.Name = "Nombre_alumno";
-            this.Nombre_alumno.Width = 150;
-            // 
-            // Numero_control
-            // 
-            this.Numero_control.HeaderText = "Numero de Control";
-            this.Numero_control.MinimumWidth = 8;
-            this.Numero_control.Name = "Numero_control";
-            this.Numero_control.Width = 150;
-            // 
             // CRUD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -476,6 +492,7 @@
             this.Name = "CRUD";
             this.Text = "CRUD";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -512,7 +529,6 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
@@ -523,5 +539,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Carrera;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre_alumno;
         private System.Windows.Forms.DataGridViewTextBoxColumn Numero_control;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
