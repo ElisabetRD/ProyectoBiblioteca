@@ -120,16 +120,17 @@ namespace Biblioteca
             return true;
         }
 
-        private void CargarDatosProducto()
+        private void CargarDatosLibro()
         {
-            mLibro.fecha = DateTime.Parse(dtpFecha.Text.Trim());
+
+            mLibro.fecha = DateTime.Parse(dtpFecha.Text);
             mLibro.titulo_libro = txtTitulo.Text.Trim();
             mLibro.autor = txtAutor.Text.Trim();
             mLibro.clasificacion = cbClasificacion.Text.Trim();
             mLibro.folio = txtFolio.Text.Trim();
             mLibro.nombre_alumno = txtNombreAlumno.Text.Trim();
             mLibro.carrera = cbCarrera.Text.Trim();
-            mLibro.numero_control = int.Parse(txtNumeroControl.Text.Trim());
+            mLibro.numero_control = Convert.ToInt32(txtFolio.Text);
         }
 
         private void LimpiarDatosProducto()
@@ -154,7 +155,6 @@ namespace Biblioteca
             foreach (var libro in mLibros)
             {
                 dataGridView2.Rows.Add(
-                   libro.id_registro,
                    libro.fecha,
                    libro.titulo_libro,
                    libro.autor,
@@ -172,7 +172,7 @@ namespace Biblioteca
             if (!datosCorrectos())
                 return;
 
-            CargarDatosProducto();
+            CargarDatosLibro();
 
             if (mConsultaLibro.agregarLibro(mLibro))
             {
@@ -191,7 +191,7 @@ namespace Biblioteca
             if (!datosCorrectos())
                 return;
 
-            CargarDatosProducto();
+            CargarDatosLibro();
 
             if (mConsultaLibro.modificarLibro(mLibro))
             {
@@ -209,7 +209,7 @@ namespace Biblioteca
         {
             if (MessageBox.Show("¿Desea eliminar el producto?", "Eliminar producto", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                CargarDatosProducto();
+                CargarDatosLibro();
                 if (mConsultaLibro.eliminarLibro(mLibro))
                 {
                     MessageBox.Show("Producto eliminado con éxito.");
@@ -229,27 +229,22 @@ namespace Biblioteca
         }
 
         
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-           
-
-         
-
-        }
-
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridViewRow fila = dataGridView2.Rows[e.RowIndex];
+           
+        }
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow columna = dataGridView2.Rows[e.ColumnIndex];
 
-            dtpFecha.Text = Convert.ToString(fila.Cells["Fecha"].Value);
-            txtTitulo.Text = Convert.ToString(fila.Cells["Titulo"].Value);
-            txtAutor.Text = Convert.ToString(fila.Cells["Autor"].Value);
-            cbClasificacion.Text = Convert.ToString(fila.Cells["Clasificacion"].Value);
-            txtFolio.Text = Convert.ToString(fila.Cells["Folio"].Value);
-            cbCarrera.Text = Convert.ToString(fila.Cells["Carrera"].Value);
-            txtNombreAlumno.Text = Convert.ToString(fila.Cells["Nombre alumno"].Value);
-            txtNumeroControl.Text = Convert.ToString(fila.Cells["Numero de control"].Value);
+            dtpFecha.Text = Convert.ToString(columna.Cells["Fecha"].Value);
+            txtTitulo.Text = Convert.ToString(columna.Cells["Titulo"].Value);
+            txtAutor.Text = Convert.ToString(columna.Cells["Autor"].Value);
+            cbClasificacion.Text = Convert.ToString(columna.Cells["Clasificacion"].Value);
+            txtFolio.Text = Convert.ToString(columna.Cells["Folio"].Value);
+            cbCarrera.Text = Convert.ToString(columna.Cells["Carrera"].Value);
+            txtNombreAlumno.Text = Convert.ToString(columna.Cells["Nombre_alumno"].Value);
+            txtNumeroControl.Text = Convert.ToString(columna.Cells["Numero_control"].Value);
         }
     }
 }

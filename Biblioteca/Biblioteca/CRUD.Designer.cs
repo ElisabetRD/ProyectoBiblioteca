@@ -33,15 +33,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtpFecha = new System.Windows.Forms.TextBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
@@ -65,6 +56,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Titulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Autor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Clasificacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Folio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Carrera = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre_alumno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Numero_control = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -98,8 +98,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel2.Controls.Add(this.dataGridView2);
             this.panel2.Controls.Add(this.dtpFecha);
+            this.panel2.Controls.Add(this.dataGridView2);
             this.panel2.Controls.Add(this.btnLimpiar);
             this.panel2.Controls.Add(this.btnEliminar);
             this.panel2.Controls.Add(this.btnModificar);
@@ -131,14 +131,14 @@
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column9,
-            this.Column10,
-            this.Column11,
-            this.Column12,
-            this.Column13,
-            this.Column14,
-            this.Column15,
-            this.Column16});
+            this.Fecha,
+            this.Titulo,
+            this.Autor,
+            this.Clasificacion,
+            this.Folio,
+            this.Carrera,
+            this.Nombre_alumno,
+            this.Numero_control});
             this.dataGridView2.Location = new System.Drawing.Point(3, 378);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
@@ -146,69 +146,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(604, 372);
             this.dataGridView2.TabIndex = 59;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Fecha";
-            this.Column9.MinimumWidth = 8;
-            this.Column9.Name = "Column9";
-            this.Column9.Width = 150;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Titulo del Libro";
-            this.Column10.MinimumWidth = 8;
-            this.Column10.Name = "Column10";
-            this.Column10.Width = 150;
-            // 
-            // Column11
-            // 
-            this.Column11.HeaderText = "Autor";
-            this.Column11.MinimumWidth = 8;
-            this.Column11.Name = "Column11";
-            this.Column11.Width = 150;
-            // 
-            // Column12
-            // 
-            this.Column12.HeaderText = "Clasificacion";
-            this.Column12.MinimumWidth = 8;
-            this.Column12.Name = "Column12";
-            this.Column12.Width = 150;
-            // 
-            // Column13
-            // 
-            this.Column13.HeaderText = "Folio";
-            this.Column13.MinimumWidth = 8;
-            this.Column13.Name = "Column13";
-            this.Column13.Width = 150;
-            // 
-            // Column14
-            // 
-            this.Column14.HeaderText = "Carrrera";
-            this.Column14.MinimumWidth = 8;
-            this.Column14.Name = "Column14";
-            this.Column14.Width = 150;
-            // 
-            // Column15
-            // 
-            this.Column15.HeaderText = "Nombre Alumno";
-            this.Column15.MinimumWidth = 8;
-            this.Column15.Name = "Column15";
-            this.Column15.Width = 150;
-            // 
-            // Column16
-            // 
-            this.Column16.HeaderText = "Numero de Control";
-            this.Column16.MinimumWidth = 8;
-            this.Column16.Name = "Column16";
-            this.Column16.Width = 150;
-            // 
-            // dtpFecha
-            // 
-            this.dtpFecha.Location = new System.Drawing.Point(151, 32);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(295, 26);
-            this.dtpFecha.TabIndex = 58;
             // 
             // btnLimpiar
             // 
@@ -464,6 +401,70 @@
             this.label1.TabIndex = 23;
             this.label1.Text = "Fecha:";
             // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Location = new System.Drawing.Point(151, 26);
+            this.dtpFecha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(295, 26);
+            this.dtpFecha.TabIndex = 60;
+            // 
+            // Fecha
+            // 
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.MinimumWidth = 8;
+            this.Fecha.Name = "Fecha";
+            this.Fecha.Width = 150;
+            // 
+            // Titulo
+            // 
+            this.Titulo.HeaderText = "Titulo del Libro";
+            this.Titulo.MinimumWidth = 8;
+            this.Titulo.Name = "Titulo";
+            this.Titulo.Width = 150;
+            // 
+            // Autor
+            // 
+            this.Autor.HeaderText = "Autor";
+            this.Autor.MinimumWidth = 8;
+            this.Autor.Name = "Autor";
+            this.Autor.Width = 150;
+            // 
+            // Clasificacion
+            // 
+            this.Clasificacion.HeaderText = "Clasificacion";
+            this.Clasificacion.MinimumWidth = 8;
+            this.Clasificacion.Name = "Clasificacion";
+            this.Clasificacion.Width = 150;
+            // 
+            // Folio
+            // 
+            this.Folio.HeaderText = "Folio";
+            this.Folio.MinimumWidth = 8;
+            this.Folio.Name = "Folio";
+            this.Folio.Width = 150;
+            // 
+            // Carrera
+            // 
+            this.Carrera.HeaderText = "Carrrera";
+            this.Carrera.MinimumWidth = 8;
+            this.Carrera.Name = "Carrera";
+            this.Carrera.Width = 150;
+            // 
+            // Nombre_alumno
+            // 
+            this.Nombre_alumno.HeaderText = "Nombre Alumno";
+            this.Nombre_alumno.MinimumWidth = 8;
+            this.Nombre_alumno.Name = "Nombre_alumno";
+            this.Nombre_alumno.Width = 150;
+            // 
+            // Numero_control
+            // 
+            this.Numero_control.HeaderText = "Numero de Control";
+            this.Numero_control.MinimumWidth = 8;
+            this.Numero_control.Name = "Numero_control";
+            this.Numero_control.Width = 150;
+            // 
             // CRUD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -512,15 +513,15 @@
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox dtpFecha;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Titulo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Autor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Clasificacion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Folio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Carrera;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre_alumno;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Numero_control;
     }
 }

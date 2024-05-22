@@ -24,3 +24,16 @@ C:\Users\Jessica Reyes\Desktop\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj
 C:\Users\Jessica Reyes\Desktop\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
 C:\Users\Jessica Reyes\Desktop\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
 C:\Users\Jessica Reyes\Desktop\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb
+C:\Users\Jessica Reyes\Desktop\Proyectobiblioteca\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe.config
+C:\Users\Jessica Reyes\Desktop\Proyectobiblioteca\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe
+C:\Users\Jessica Reyes\Desktop\Proyectobiblioteca\Biblioteca\Biblioteca\bin\Debug\Biblioteca.pdb
+C:\Users\Jessica Reyes\Desktop\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.AssemblyReference.cache
+C:\Users\Jessica Reyes\Desktop\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.CRUD.resources
+C:\Users\Jessica Reyes\Desktop\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Form1.resources
+C:\Users\Jessica Reyes\Desktop\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Inicio.resources
+C:\Users\Jessica Reyes\Desktop\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Properties.Resources.resources
+C:\Users\Jessica Reyes\Desktop\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.RegistroUsuario.resources
+C:\Users\Jessica Reyes\Desktop\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.GenerateResource.cache
+C:\Users\Jessica Reyes\Desktop\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Jessica Reyes\Desktop\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
+C:\Users\Jessica Reyes\Desktop\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb
