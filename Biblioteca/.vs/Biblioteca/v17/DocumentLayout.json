@@ -1,42 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ANTON\\Desktop\\Biblioteca\\",
+  "WorkspaceRootPath": "C:\\Users\\ANTON\\Desktop\\4\\Proyectobiblioteca\\Biblioteca\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|c:\\users\\anton\\desktop\\biblioteca\\biblioteca\\modelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\modelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|c:\\users\\anton\\desktop\\4\\proyectobiblioteca\\biblioteca\\biblioteca\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|C:\\Users\\ANTON\\Desktop\\Biblioteca\\biblioteca\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|c:\\users\\anton\\desktop\\biblioteca\\biblioteca\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|c:\\users\\anton\\desktop\\biblioteca\\biblioteca\\registrousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\registrousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|C:\\Users\\ANTON\\Desktop\\Biblioteca\\biblioteca\\registrousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\registrousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|C:\\Users\\ANTON\\Desktop\\Biblioteca\\biblioteca\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|C:\\Users\\ANTON\\Desktop\\Biblioteca\\biblioteca\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|C:\\Users\\ANTON\\Desktop\\Biblioteca\\biblioteca\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|C:\\Users\\ANTON\\Desktop\\4\\Proyectobiblioteca\\Biblioteca\\biblioteca\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|C:\\Users\\ANTON\\Desktop\\Biblioteca\\biblioteca\\bd\\conexionmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\bd\\conexionmysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|C:\\Users\\ANTON\\Desktop\\4\\Proyectobiblioteca\\Biblioteca\\biblioteca\\registrousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46FD8CB6-ED80-4D31-8946-2C6D2244E629}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\registrousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,115 +31,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Modelo.cs",
-              "DocumentMoniker": "C:\\Users\\ANTON\\Desktop\\Biblioteca\\Biblioteca\\Modelo.cs",
-              "RelativeDocumentMoniker": "Biblioteca\\Modelo.cs",
-              "ToolTip": "C:\\Users\\ANTON\\Desktop\\Biblioteca\\Biblioteca\\Modelo.cs",
-              "RelativeToolTip": "Biblioteca\\Modelo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAJAAAA",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ANTON\\Desktop\\4\\Proyectobiblioteca\\Biblioteca\\Biblioteca\\Form1.cs",
+              "RelativeDocumentMoniker": "Biblioteca\\Form1.cs",
+              "ToolTip": "C:\\Users\\ANTON\\Desktop\\4\\Proyectobiblioteca\\Biblioteca\\Biblioteca\\Form1.cs",
+              "RelativeToolTip": "Biblioteca\\Form1.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAADEAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T22:03:46.498Z",
+              "WhenOpened": "2024-05-24T18:28:32.816Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Session.cs",
-              "DocumentMoniker": "C:\\Users\\ANTON\\Desktop\\Biblioteca\\Biblioteca\\Session.cs",
-              "RelativeDocumentMoniker": "Biblioteca\\Session.cs",
-              "ToolTip": "C:\\Users\\ANTON\\Desktop\\Biblioteca\\Biblioteca\\Session.cs",
-              "RelativeToolTip": "Biblioteca\\Session.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T21:58:35.111Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "RegistroUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\ANTON\\Desktop\\Biblioteca\\Biblioteca\\RegistroUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\ANTON\\Desktop\\4\\Proyectobiblioteca\\Biblioteca\\Biblioteca\\RegistroUsuario.cs",
               "RelativeDocumentMoniker": "Biblioteca\\RegistroUsuario.cs",
-              "ToolTip": "C:\\Users\\ANTON\\Desktop\\Biblioteca\\Biblioteca\\RegistroUsuario.cs",
+              "ToolTip": "C:\\Users\\ANTON\\Desktop\\4\\Proyectobiblioteca\\Biblioteca\\Biblioteca\\RegistroUsuario.cs",
               "RelativeToolTip": "Biblioteca\\RegistroUsuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE0AAABCAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T22:00:03.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CRUD.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ANTON\\Desktop\\Biblioteca\\Biblioteca\\CRUD.cs",
-              "RelativeDocumentMoniker": "Biblioteca\\CRUD.cs",
-              "ToolTip": "C:\\Users\\ANTON\\Desktop\\Biblioteca\\Biblioteca\\CRUD.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Biblioteca\\CRUD.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T17:50:58.015Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RegistroUsuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ANTON\\Desktop\\Biblioteca\\Biblioteca\\RegistroUsuario.cs",
-              "RelativeDocumentMoniker": "Biblioteca\\RegistroUsuario.cs",
-              "ToolTip": "C:\\Users\\ANTON\\Desktop\\Biblioteca\\Biblioteca\\RegistroUsuario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Biblioteca\\RegistroUsuario.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T15:32:33.038Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Inicio.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ANTON\\Desktop\\Biblioteca\\Biblioteca\\Inicio.cs",
-              "RelativeDocumentMoniker": "Biblioteca\\Inicio.cs",
-              "ToolTip": "C:\\Users\\ANTON\\Desktop\\Biblioteca\\Biblioteca\\Inicio.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Biblioteca\\Inicio.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T17:31:16.575Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-20T22:00:03.428Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Usuarios.cs",
-              "DocumentMoniker": "C:\\Users\\ANTON\\Desktop\\Biblioteca\\Biblioteca\\Usuarios.cs",
-              "RelativeDocumentMoniker": "Biblioteca\\Usuarios.cs",
-              "ToolTip": "C:\\Users\\ANTON\\Desktop\\Biblioteca\\Biblioteca\\Usuarios.cs",
-              "RelativeToolTip": "Biblioteca\\Usuarios.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T17:47:41.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ConexionMySql.cs",
-              "DocumentMoniker": "C:\\Users\\ANTON\\Desktop\\Biblioteca\\Biblioteca\\BD\\ConexionMySql.cs",
-              "RelativeDocumentMoniker": "Biblioteca\\BD\\ConexionMySql.cs",
-              "ToolTip": "C:\\Users\\ANTON\\Desktop\\Biblioteca\\Biblioteca\\BD\\ConexionMySql.cs",
-              "RelativeToolTip": "Biblioteca\\BD\\ConexionMySql.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T18:04:42.362Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ANTON\\Desktop\\Biblioteca\\Biblioteca\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ANTON\\Desktop\\4\\Proyectobiblioteca\\Biblioteca\\Biblioteca\\Form1.cs",
               "RelativeDocumentMoniker": "Biblioteca\\Form1.cs",
-              "ToolTip": "C:\\Users\\ANTON\\Desktop\\Biblioteca\\Biblioteca\\Form1.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\ANTON\\Desktop\\4\\Proyectobiblioteca\\Biblioteca\\Biblioteca\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "Biblioteca\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T13:42:18.73Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-19T13:42:18.73Z"
             }
           ]
         }
