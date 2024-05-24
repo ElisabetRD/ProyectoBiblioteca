@@ -96,5 +96,12 @@ namespace Biblioteca
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 registrar = new Form1();
+            registrar.ShowDialog();
+        }
     }
 }

@@ -48,10 +48,7 @@ namespace Biblioteca
 
         }
 
-        private void txtBusqueda_TextChanged(object sender, EventArgs e)
-        {
-            CargarLibro(txtBusqueda.Text.Trim());
-        }
+       
 
         private bool datosCorrectos()
         {
@@ -123,17 +120,24 @@ namespace Biblioteca
         private void CargarDatosLibro()
         {
 
-            mLibro.fecha = DateTime.Parse(dtpFecha.Text);
-            mLibro.titulo_libro = txtTitulo.Text.Trim();
-            mLibro.autor = txtAutor.Text.Trim();
-            mLibro.clasificacion = cbClasificacion.Text.Trim();
-            mLibro.folio = txtFolio.Text.Trim();
-            mLibro.nombre_alumno = txtNombreAlumno.Text.Trim();
-            mLibro.carrera = cbCarrera.Text.Trim();
-            mLibro.numero_control = Convert.ToInt32(txtFolio.Text);
+            try
+            {
+                mLibro.fecha = DateTime.Parse(dtpFecha.Text);
+                mLibro.titulo_libro = txtTitulo.Text.Trim();
+                mLibro.autor = txtAutor.Text.Trim();
+                mLibro.clasificacion = cbClasificacion.Text.Trim();
+                mLibro.folio = txtFolio.Text.Trim();
+                mLibro.nombre_alumno = txtNombreAlumno.Text.Trim();
+                mLibro.carrera = cbCarrera.Text.Trim();
+                mLibro.numero_control = int.Parse(txtNumeroControl.Text.Trim());
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show($"Error al cargar datos del libro: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void LimpiarDatosProducto()
+        private void LimpiarDatoslibro()
         {
             dtpFecha.Text = "";
             txtTitulo.Text = "";
@@ -167,67 +171,12 @@ namespace Biblioteca
             }
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
-            if (!datosCorrectos())
-                return;
+       
+       
 
-            CargarDatosLibro();
+       
 
-            if (mConsultaLibro.agregarLibro(mLibro))
-            {
-                MessageBox.Show("Préstamo agregado");
-                CargarLibro();
-                LimpiarDatosProducto();
-            }
-            else
-            {
-                MessageBox.Show("Error al agregar el préstamo");
-            }
-        }
-
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
-            if (!datosCorrectos())
-                return;
-
-            CargarDatosLibro();
-
-            if (mConsultaLibro.modificarLibro(mLibro))
-            {
-                MessageBox.Show("Préstamo modificado");
-                CargarLibro();
-                LimpiarDatosProducto();
-            }
-            else
-            {
-                MessageBox.Show("Error al modificar el préstamo");
-            }
-        }
-
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("¿Desea eliminar el producto?", "Eliminar producto", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                CargarDatosLibro();
-                if (mConsultaLibro.eliminarLibro(mLibro))
-                {
-                    MessageBox.Show("Producto eliminado con éxito.");
-                    CargarLibro();
-                    LimpiarDatosProducto();
-                }
-                else
-                {
-                    MessageBox.Show("Error al eliminar el producto.");
-                }
-            }
-        }
-
-        private void btnLimpiar_Click(object sender, EventArgs e)
-        {
-            LimpiarDatosProducto();
-        }
-
+      
         
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -245,6 +194,91 @@ namespace Biblioteca
             cbCarrera.Text = Convert.ToString(columna.Cells["Carrera"].Value);
             txtNombreAlumno.Text = Convert.ToString(columna.Cells["Nombre_alumno"].Value);
             txtNumeroControl.Text = Convert.ToString(columna.Cells["Numero_control"].Value);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Inicio regi = new Inicio();
+            regi.ShowDialog();
+        }
+
+        private void txtBusqueda_TextChanged_1(object sender, EventArgs e)
+        {
+            CargarLibro(txtBusqueda.Text.Trim());
+        }
+
+        private void btnAgregar_Click_1(object sender, EventArgs e)
+        {
+            if (!datosCorrectos())
+                return;
+
+            CargarDatosLibro();
+
+            if (mConsultaLibro.agregarLibro(mLibro))
+            {
+                MessageBox.Show("Préstamo agregado");
+                CargarLibro();
+                LimpiarDatoslibro();
+            }
+            else
+            {
+                MessageBox.Show("Error al agregar el préstamo");
+            }
+
+        }
+
+        private void btnModificar_Click_1(object sender, EventArgs e)
+        {
+            if (!datosCorrectos())
+                return;
+
+            CargarDatosLibro();
+
+            if (mConsultaLibro.modificarLibro(mLibro))
+            {
+                MessageBox.Show("Préstamo modificado");
+                CargarLibro();
+                LimpiarDatoslibro();
+            }
+            else
+            {
+                MessageBox.Show("Error al modificar el préstamo");
+            }
+
+        }
+
+       
+        
+
+        private void btnLimpiar_Click_1(object sender, EventArgs e)
+        {
+            LimpiarDatoslibro();
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea eliminar el producto?", "Eliminar producto", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                CargarDatosLibro();
+                if (mConsultaLibro.eliminarLibro(mLibro))
+                {
+                    MessageBox.Show("Producto eliminado con éxito.");
+                    CargarLibro();
+                    LimpiarDatoslibro();
+                }
+                else
+                {
+                    MessageBox.Show("Error al eliminar el producto.");
+                }
+            }
+
         }
     }
 }

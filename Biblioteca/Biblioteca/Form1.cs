@@ -19,8 +19,9 @@ namespace Biblioteca
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             RegistroUsuario registrar = new RegistroUsuario();
-            registrar.Show();
+            registrar.ShowDialog();
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)

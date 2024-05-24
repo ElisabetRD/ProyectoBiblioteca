@@ -73,6 +73,57 @@ namespace Biblioteca.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap basura {
+            get {
+                object obj = ResourceManager.GetObject("basura", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] bubble_576578_1280 {
+            get {
+                object obj = ResourceManager.GetObject("bubble_576578_1280", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cerrar {
+            get {
+                object obj = ResourceManager.GetObject("cerrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flecha_de_circulo_de_disquete_a_la_derecha {
+            get {
+                object obj = ResourceManager.GetObject("flecha-de-circulo-de-disquete-a-la-derecha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gratis_png_ilustracion_de_burbuja_azul_iconos_de_computadora_de_burbuja_de_circulo_orbe {
+            get {
+                object obj = ResourceManager.GetObject("gratis-png-ilustracion-de-burbuja-azul-iconos-de-computadora-de-burbuja-de-circul" +
+                        "o-orbe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hogar {
             get {
                 object obj = ResourceManager.GetObject("hogar", resourceCulture);
@@ -87,6 +138,96 @@ namespace Biblioteca.Properties {
             get {
                 object obj = ResourceManager.GetObject("hogar1", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Imagen_de_WhatsApp_2024_05_22_a_las_07_04_51_69b7c581 {
+            get {
+                object obj = ResourceManager.GetObject("Imagen de WhatsApp 2024-05-22 a las 07.04.51_69b7c581", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Imagen_de_WhatsApp_2024_05_22_a_las_07_04_51_915fc13f {
+            get {
+                object obj = ResourceManager.GetObject("Imagen de WhatsApp 2024-05-22 a las 07.04.51_915fc13f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Imagen_de_WhatsApp_2024_05_22_a_las_07_041 {
+            get {
+                object obj = ResourceManager.GetObject("Imagen de WhatsApp 2024-05-22 a las 07.041", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap O0 {
+            get {
+                object obj = ResourceManager.GetObject("O0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OIP__1_ {
+            get {
+                object obj = ResourceManager.GetObject("OIP (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OIP__2_ {
+            get {
+                object obj = ResourceManager.GetObject("OIP (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap R__1_ {
+            get {
+                object obj = ResourceManager.GetObject("R (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap R__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("R (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap usuario {
+            get {
+                object obj = ResourceManager.GetObject("usuario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

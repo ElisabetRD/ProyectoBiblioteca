@@ -141,6 +141,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\bubble-576578_1280.webp" />
     <None Include="Resources\Icon1.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +164,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\angulo-izquierdo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R %281%291.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen de WhatsApp 2024-05-22 a las 07.04.51_915fc13f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen de WhatsApp 2024-05-22 a las 07.04.51_69b7c581.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen de WhatsApp 2024-05-22 a las 07.04.51_915fc13f1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gratis-png-ilustracion-de-burbuja-azul-iconos-de-computadora-de-burbuja-de-circulo-orbe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\O0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha-de-circulo-de-disquete-a-la-derecha.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

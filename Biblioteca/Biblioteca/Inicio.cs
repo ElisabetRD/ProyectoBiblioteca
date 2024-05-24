@@ -23,5 +23,12 @@ namespace Biblioteca
             this.Hide();
             re.ShowDialog();
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 registrar = new Form1();
+            registrar.ShowDialog();
+        }
     }
 }
