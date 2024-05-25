@@ -64,7 +64,8 @@ namespace Biblioteca
 
         private void RegistroUsuario_Load(object sender, EventArgs e)
         {
-
+            textBox1.PasswordChar = '*';
+            textBox2.PasswordChar = '*';
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
