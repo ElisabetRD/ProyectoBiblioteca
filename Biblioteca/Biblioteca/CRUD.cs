@@ -16,8 +16,6 @@ namespace Biblioteca
 {
     public partial class CRUD : Form
     {
-
-
         private ConsultaLibro mConsultaLibro;
         private Libros mLibro;
         private List<Libros> mLibros;
@@ -25,6 +23,7 @@ namespace Biblioteca
         public CRUD()
         {
             InitializeComponent();
+            dataGridView2.CellClick += dataGridView2_CellClick;
 
             mConsultaLibro = new ConsultaLibro();
             mLibro = new Libros();
@@ -48,7 +47,6 @@ namespace Biblioteca
 
         }
 
-       
 
         private bool datosCorrectos()
         {
@@ -171,29 +169,25 @@ namespace Biblioteca
             }
         }
 
-       
-       
-
-       
-
-      
-        
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
            
         }
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridViewRow columna = dataGridView2.Rows[e.ColumnIndex];
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                DataGridViewRow fila = dataGridView2.Rows[e.RowIndex];
 
-            dtpFecha.Text = Convert.ToString(columna.Cells["Fecha"].Value);
-            txtTitulo.Text = Convert.ToString(columna.Cells["Titulo"].Value);
-            txtAutor.Text = Convert.ToString(columna.Cells["Autor"].Value);
-            cbClasificacion.Text = Convert.ToString(columna.Cells["Clasificacion"].Value);
-            txtFolio.Text = Convert.ToString(columna.Cells["Folio"].Value);
-            cbCarrera.Text = Convert.ToString(columna.Cells["Carrera"].Value);
-            txtNombreAlumno.Text = Convert.ToString(columna.Cells["Nombre_alumno"].Value);
-            txtNumeroControl.Text = Convert.ToString(columna.Cells["Numero_control"].Value);
+                dtpFecha.Text = Convert.ToString(fila.Cells["Fecha"].Value);
+                txtTitulo.Text = Convert.ToString(fila.Cells["Titulo"].Value);
+                txtAutor.Text = Convert.ToString(fila.Cells["Autor"].Value);
+                cbClasificacion.Text = Convert.ToString(fila.Cells["Clasificacion"].Value);
+                txtFolio.Text = Convert.ToString(fila.Cells["Folio"].Value);
+                cbCarrera.Text = Convert.ToString(fila.Cells["Carrera"].Value);
+                txtNombreAlumno.Text = Convert.ToString(fila.Cells["Nombre_alumno"].Value);
+                txtNumeroControl.Text = Convert.ToString(fila.Cells["Numero_control"].Value);
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -248,9 +242,6 @@ namespace Biblioteca
 
         }
 
-       
-        
-
         private void btnLimpiar_Click_1(object sender, EventArgs e)
         {
             LimpiarDatoslibro();
@@ -278,6 +269,11 @@ namespace Biblioteca
                     MessageBox.Show("Error al eliminar el producto.");
                 }
             }
+
+        }
+
+        private void dataGridView2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }
