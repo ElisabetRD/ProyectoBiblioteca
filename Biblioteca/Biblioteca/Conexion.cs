@@ -15,7 +15,7 @@ namespace Biblioteca
             string puerto = "3306";
             string usuario = "root";
             string password = "";
-            string bd = "usuario";
+            string bd = "proyecto_biblioteca";
 
             string cadenaConexion = "server=" + servidor + "; port=" + puerto + "; user id=" + usuario + "; password=" + password + "; database=" + bd;
             MySqlConnection conexion = new MySqlConnection(cadenaConexion);

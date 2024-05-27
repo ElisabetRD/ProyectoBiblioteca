@@ -50,3 +50,16 @@ C:\Users\ANTON\Desktop\4\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Bibl
 C:\Users\ANTON\Desktop\4\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
 C:\Users\ANTON\Desktop\4\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
 C:\Users\ANTON\Desktop\4\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb
+C:\Users\ivonn\Music\Proyectobiblioteca\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe.config
+C:\Users\ivonn\Music\Proyectobiblioteca\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe
+C:\Users\ivonn\Music\Proyectobiblioteca\Biblioteca\Biblioteca\bin\Debug\Biblioteca.pdb
+C:\Users\ivonn\Music\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.AssemblyReference.cache
+C:\Users\ivonn\Music\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.CRUD.resources
+C:\Users\ivonn\Music\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Form1.resources
+C:\Users\ivonn\Music\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Inicio.resources
+C:\Users\ivonn\Music\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Properties.Resources.resources
+C:\Users\ivonn\Music\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.RegistroUsuario.resources
+C:\Users\ivonn\Music\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.GenerateResource.cache
+C:\Users\ivonn\Music\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\ivonn\Music\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
+C:\Users\ivonn\Music\Proyectobiblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb

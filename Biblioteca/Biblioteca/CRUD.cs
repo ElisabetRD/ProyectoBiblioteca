@@ -221,26 +221,31 @@ namespace Biblioteca
             }
 
         }
-
         private void btnModificar_Click_1(object sender, EventArgs e)
         {
+            // Verificar que los datos ingresados sean correctos
             if (!datosCorrectos())
                 return;
 
+            // Cargar los datos del libro desde los campos del formulario
             CargarDatosLibro();
 
+            // Llamar al método de modificar libro
             if (mConsultaLibro.modificarLibro(mLibro))
             {
-                MessageBox.Show("Préstamo modificado");
+                MessageBox.Show("Préstamo modificado con éxito.");
+                // Recargar la lista de libros en el DataGridView
                 CargarLibro();
+                // Limpiar los campos del formulario
                 LimpiarDatoslibro();
             }
             else
             {
-                MessageBox.Show("Error al modificar el préstamo");
+                MessageBox.Show("Error al modificar el préstamo.");
             }
-
         }
+
+
 
         private void btnLimpiar_Click_1(object sender, EventArgs e)
         {

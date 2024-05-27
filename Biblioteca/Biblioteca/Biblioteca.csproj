@@ -204,5 +204,11 @@
   <ItemGroup>
     <None Include="Resources\flecha-de-circulo-de-disquete-a-la-derecha.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R1.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
