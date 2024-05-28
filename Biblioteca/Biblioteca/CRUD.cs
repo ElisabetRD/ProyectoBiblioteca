@@ -231,7 +231,7 @@ namespace Biblioteca
             CargarDatosLibro();
 
             // Llamar al método de modificar libro
-            if (mConsultaLibro.modificarLibro(mLibro))
+            if (mConsultaLibro.modificarLibroPorFolio(mLibro))
             {
                 MessageBox.Show("Préstamo modificado con éxito.");
                 // Recargar la lista de libros en el DataGridView
@@ -257,24 +257,29 @@ namespace Biblioteca
         {
 
         }
-
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿Desea eliminar el producto?", "Eliminar producto", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                CargarDatosLibro();
-                if (mConsultaLibro.eliminarLibro(mLibro))
+                string folio = txtFolio.Text.Trim(); // Obtener el folio del libro seleccionado
+                if (!string.IsNullOrEmpty(folio))
                 {
-                    MessageBox.Show("Producto eliminado con éxito.");
-                    CargarLibro();
-                    LimpiarDatoslibro();
+                    if (mConsultaLibro.eliminarLibroPorFolio(folio))
+                    {
+                        MessageBox.Show("Producto eliminado con éxito.");
+                        CargarLibro();
+                        LimpiarDatoslibro();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error al eliminar el producto.");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Error al eliminar el producto.");
+                    MessageBox.Show("Por favor, seleccione un libro antes de intentar eliminarlo.");
                 }
             }
-
         }
 
         private void dataGridView2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)

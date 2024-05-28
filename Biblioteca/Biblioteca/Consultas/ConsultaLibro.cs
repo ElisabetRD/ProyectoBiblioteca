@@ -41,44 +41,57 @@ namespace Biblioteca.Consultas
             }
         }
 
-        public bool modificarLibro(Libros mlibro)
+        public bool modificarLibroPorFolio(Libros mlibro)
         {
             string UPDATE = "UPDATE registrar_prestamos " +
                             "SET fecha = @fecha, " +
                             "titulo_libro = @titulo_libro, " +
                             "autor = @autor, " +
                             "clasificacion = @clasificacion, " +
-                            "folio = @folio, " +
-                            "nombre_alumno = @nombre_alumno, " +
                             "carrera = @carrera, " +
                             "numero_control = @numero_control " +
-                            "WHERE id_registro = @id_registro;";
+                            "WHERE folio = @folio;";
 
-            using (MySqlCommand mCommand = new MySqlCommand(UPDATE, mConexion.getConexion()))
+            MySqlCommand mCommand = new MySqlCommand(UPDATE, mConexion.getConexion());
+
+            mCommand.Parameters.Add(new MySqlParameter("@fecha", mlibro.fecha));
+            mCommand.Parameters.Add(new MySqlParameter("@titulo_libro", mlibro.titulo_libro));
+            mCommand.Parameters.Add(new MySqlParameter("@autor", mlibro.autor));
+            mCommand.Parameters.Add(new MySqlParameter("@clasificacion", mlibro.clasificacion));
+            mCommand.Parameters.Add(new MySqlParameter("@carrera", mlibro.carrera));
+            mCommand.Parameters.Add(new MySqlParameter("@numero_control", mlibro.numero_control));
+            mCommand.Parameters.Add(new MySqlParameter("@folio", mlibro.folio));
+
+            try
             {
-                mCommand.Parameters.Add(new MySqlParameter("@fecha", mlibro.fecha));
-                mCommand.Parameters.Add(new MySqlParameter("@titulo_libro", mlibro.titulo_libro));
-                mCommand.Parameters.Add(new MySqlParameter("@autor", mlibro.autor));
-                mCommand.Parameters.Add(new MySqlParameter("@clasificacion", mlibro.clasificacion));
-                mCommand.Parameters.Add(new MySqlParameter("@folio", mlibro.folio));
-                mCommand.Parameters.Add(new MySqlParameter("@nombre_alumno", mlibro.nombre_alumno));
-                mCommand.Parameters.Add(new MySqlParameter("@carrera", mlibro.carrera));
-                mCommand.Parameters.Add(new MySqlParameter("@numero_control", mlibro.numero_control));
-                mCommand.Parameters.Add(new MySqlParameter("@id_registro", mlibro.id_registro));
-
                 return mCommand.ExecuteNonQuery() > 0;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error al modificar el libro: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
         }
 
-        public bool eliminarLibro(Libros mlibro)
+
+        public bool eliminarLibroPorFolio(string folio)
         {
-            string DELETE = "DELETE FROM registrar_prestamos WHERE id_registro = @id_registro;";
-            using (MySqlCommand mCommand = new MySqlCommand(DELETE, mConexion.getConexion()))
+            string DELETE = "DELETE FROM registrar_prestamos WHERE folio = @folio;";
+            MySqlCommand mCommand = new MySqlCommand(DELETE, mConexion.getConexion());
+
+            mCommand.Parameters.Add(new MySqlParameter("@folio", folio));
+
+            try
             {
-                mCommand.Parameters.Add(new MySqlParameter("@id_registro", mlibro.id_registro));
                 return mCommand.ExecuteNonQuery() > 0;
             }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error al eliminar el libro: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
         }
+
 
         public List<Libros> consultarLibro(string filtro)
         {
